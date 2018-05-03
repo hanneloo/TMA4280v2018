@@ -1,0 +1,39 @@
+Size: n: 2, P: 12, Threads: t = 8
+u_max = 0.000000e+00 
+Time: 0.125116
+Error: 0.000000000000000
+
+Size: n: 4, P: 12, Threads: t = 8
+u_max = 0.000000e+00 
+Time: 0.131037
+Error: 0.000000000000000
+
+Size: n: 8, P: 12, Threads: t = 8
+u_max = 0.000000e+00 
+Time: 0.129542
+Error: 0.000000000000000
+
+Size: n: 16, P: 12, Threads: t = 8
+u_max = 9.847246e-01 
+Time: 0.134768
+Error: 0.116336844650958
+
+Size: n: 32, P: 12, Threads: t = 8
+u_max = nan 
+Time: 0.137593
+Error: nan
+
+Size: n: 64, P: 12, Threads: t = 8
+u_max = 1.000323e+00 
+Time: 0.139473
+Error: 0.005497210283914
+
+[compute-1-0-13:119819] *** Process received signal ***
+[compute-1-0-13:119819] Signal: Segmentation fault (11)
+[compute-1-0-13:119819] Signal code:  (128)
+[compute-1-0-13:119819] Failing at address: (nil)
+[compute-1-0-13:119834] *** Process received signal ***
+[compute-1-0-13:119834] Signal: Segmentation fault (11)
+[compute-1-0-13:119834] Signal code:  (128)
+[compute-1-0-13:119834] Failing at address: (nil)
+=>> PBS: job killed: walltime 989 exceeded limit 900

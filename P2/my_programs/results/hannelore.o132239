@@ -1,0 +1,40 @@
+Size: n: 2, P: 8, Threads: t = 8
+u_max = 0.000000e+00 
+Time: 0.098074
+Error:        0.000000
+
+Size: n: 2, P: 36, Threads: t = 8
+u_max = 0.000000e+00 
+Time: 0.231931
+Error:        0.000000
+
+Size: n: 128, P: 8, Threads: t = 8
+u_max = 3.011964e-03 
+Time: 0.104732
+Error:        0.996988
+
+Size: n: 128, P: 36, Threads: t = 8
+u_max = 3.011964e-03 
+Time: 0.352046
+Error:        0.996988
+
+Size: n: 1024, P: 8, Threads: t = 8
+u_max = 4.706172e-05 
+Time: 0.331074
+Error:        0.999948
+
+Size: n: 1024, P: 36, Threads: t = 8
+u_max = 4.706194e-05 
+Time: 0.804805
+Error:        0.999953
+
+Size: n: 16384, P: 8, Threads: t = 8
+u_max = 1.838355e-07 
+Time: 64.920043
+Error:        1.000000
+
+Size: n: 16384, P: 36, Threads: t = 8
+u_max = 1.838357e-07 
+Time: 35.993401
+Error:        1.000000
+

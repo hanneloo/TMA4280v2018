@@ -1,0 +1,319 @@
+Size: n: 2, P: 12, Threads: t = 8
+u_max = 0.000000e+00 
+Time: 0.126664
+Error: 0.000000000000000
+
+Size: n: 4, P: 12, Threads: t = 8
+u_max = 0.000000e+00 
+Time: 0.124761
+Error: 0.000000000000000
+
+Size: n: 8, P: 12, Threads: t = 8
+u_max = 0.000000e+00 
+Time: 0.130828
+Error: 0.000000000000000
+
+Size: n: 16, P: 12, Threads: t = 8
+u_max = 9.847246e-01 
+Time: 0.139457
+Error: 0.116336844650958
+
+Size: n: 32, P: 12, Threads: t = 8
+u_max = 9.705117e-01 
+Time: 0.153914
+Error: 0.157972207539328
+
+Size: n: 64, P: 12, Threads: t = 8
+u_max = 1.000323e+00 
+Time: 0.143766
+Error: 0.005497210283914
+
+Size: n: 128, P: 12, Threads: t = 8
+u_max = 9.997197e-01 
+Time: 0.143585
+Error: 0.007023045797872
+
+Size: n: 256, P: 12, Threads: t = 8
+u_max = 1.000037e+00 
+Time: 0.150732
+Error: 0.000115227879173
+
+Size: n: 512, P: 12, Threads: t = 8
+u_max = 1.000004e+00 
+Time: 0.185877
+Error: 0.000146154010506
+
+Size: n: 1024, P: 12, Threads: t = 8
+u_max = 1.000003e+00 
+Time: 0.341597
+Error: 0.000002584758070
+
+*** Error in `./poisson': double free or corruption (out): 0x00007ffb6fbfa000 ***
+======= Backtrace: =========
+/usr/lib64/libc.so.6(+0x7c619)[0x7ffb8a379619]
+/share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libopen-pal.so.20(+0x34b85)[0x7ffb899f1b85]
+/share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libopen-pal.so.20(+0x7baa9)[0x7ffb89a38aa9]
+/share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libopen-pal.so.20(mca_btl_openib_finalize+0x610)[0x7ffb89a34400]
+/share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libopen-pal.so.20(+0x75d30)[0x7ffb89a32d30]
+/share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libopen-pal.so.20(mca_base_framework_close+0x7f)[0x7ffb89a1eeff]
+/share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libopen-pal.so.20(mca_base_framework_close+0x7f)[0x7ffb89a1eeff]
+/share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libmpi.so.20(ompi_mpi_finalize+0x5ae)[0x7ffb8a97881e]
+./poisson(main+0x35c)[0x4015fc]
+/usr/lib64/libc.so.6(__libc_start_main+0xf5)[0x7ffb8a31ec05]
+./poisson[0x4016cc]
+======= Memory map: ========
+00400000-00404000 r-xp 00000000 00:34 37751321                           /home/hanneloo/P2/my_programs/poisson
+00404000-00405000 r--p 00003000 00:34 37751321                           /home/hanneloo/P2/my_programs/poisson
+00405000-00406000 rw-p 00004000 00:34 37751321                           /home/hanneloo/P2/my_programs/poisson
+00406000-00407000 rw-p 00000000 00:00 0 
+00fe8000-01112000 rw-p 00000000 00:00 0                                  [heap]
+01112000-01117000 rw-p 00000000 00:00 0                                  [heap]
+01117000-011d8000 rw-p 00000000 00:00 0                                  [heap]
+011d8000-011d9000 rw-p 00000000 00:00 0                                  [heap]
+011d9000-01314000 rw-p 00000000 00:00 0                                  [heap]
+7ffb64000000-7ffb64021000 rw-p 00000000 00:00 0 
+7ffb64021000-7ffb68000000 ---p 00000000 00:00 0 
+7ffb68946000-7ffb68947000 ---p 00000000 00:00 0 
+7ffb68947000-7ffb69947000 rw-p 00000000 00:00 0                          [stack:121836]
+7ffb69947000-7ffb69948000 ---p 00000000 00:00 0 
+7ffb69948000-7ffb6a948000 rw-p 00000000 00:00 0                          [stack:121832]
+7ffb6a948000-7ffb6a949000 ---p 00000000 00:00 0 
+7ffb6a949000-7ffb6b949000 rw-p 00000000 00:00 0                          [stack:121823]
+7ffb6b949000-7ffb6b94a000 ---p 00000000 00:00 0 
+7ffb6b94a000-7ffb6c94a000 rw-p 00000000 00:00 0                          [stack:121817]
+7ffb6c94a000-7ffb6c94b000 ---p 00000000 00:00 0 
+7ffb6c94b000-7ffb6d94b000 rw-p 00000000 00:00 0                          [stack:121806]
+7ffb6d94b000-7ffb6d94c000 ---p 00000000 00:00 0 
+7ffb6d94c000-7ffb6e94c000 rw-p 00000000 00:00 0                          [stack:121799]
+7ffb6e94c000-7ffb6e94d000 ---p 00000000 00:00 0 
+7ffb6e94d000-7ffb6fdfc000 rw-p 00000000 00:00 0                          [stack:121794]
+7ffb6ffff000-7ffb78000000 rw-s 00000000 fd:02 130074                     /var/tmp/pbs.132274.nas1.foreman.hpc.ntnu.no/openmpi-sessions-1165769@compute-1-0-13_0/53672/1/shared_mem_pool.compute-1-0-13 (deleted)
+7ffb78000000-7ffb78021000 rw-p 00000000 00:00 0 
+7ffb78021000-7ffb7c000000 ---p 00000000 00:00 0 
+7ffb7c041000-7ffb7c12d000 rw-p 00000000 00:00 0 
+7ffb80000000-7ffb80021000 rw-p 00000000 00:00 0 
+7ffb80021000-7ffb84000000 ---p 00000000 00:00 0 
+7ffb841e8000-7ffb843e5000 rw-p 00000000 00:00 0 
+7ffb843e5000-7ffb847e5000 rw-p 00000000 00:00 0 
+7ffb847e5000-7ffb847e6000 rw-p 00000000 00:00 0 
+7ffb847e6000-7ffb8482e000 r-xp 00000000 fd:00 423760                     /usr/lib64/libmlx5-rdmav2.so
+7ffb8482e000-7ffb84a2d000 ---p 00048000 fd:00 423760                     /usr/lib64/libmlx5-rdmav2.so
+7ffb84a2d000-7ffb84a2e000 r--p 00047000 fd:00 423760                     /usr/lib64/libmlx5-rdmav2.so
+7ffb84a2e000-7ffb84a30000 rw-p 00048000 fd:00 423760                     /usr/lib64/libmlx5-rdmav2.so
+7ffb84a30000-7ffb84a52000 r-xp 00000000 fd:00 423820                     /usr/lib64/libmlx4-rdmav2.so
+7ffb84a52000-7ffb84c51000 ---p 00022000 fd:00 423820                     /usr/lib64/libmlx4-rdmav2.so
+7ffb84c51000-7ffb84c52000 r--p 00021000 fd:00 423820                     /usr/lib64/libmlx4-rdmav2.so
+7ffb84c52000-7ffb84c54000 rw-p 00022000 fd:00 423820                     /usr/lib64/libmlx4-rdmav2.so
+7ffb84c54000-7ffb84c58000 r-xp 00000000 fd:00 423810                     /usr/lib64/librxe-rdmav2.so
+7ffb84c58000-7ffb84e57000 ---p 00004000 fd:00 423810                     /usr/lib64/librxe-rdmav2.so
+7ffb84e57000-7ffb84e58000 r--p 00003000 fd:00 423810                     /usr/lib64/librxe-rdmav2.so
+7ffb84e58000-7ffb84e59000 rw-p 00004000 fd:00 423810                     /usr/lib64/librxe-rdmav2.so
+7ffb84e6c000-7ffb8526c000 r--s 00000000 fd:02 130065                     /var/tmp/pbs.132274.nas1.foreman.hpc.ntnu.no/openmpi-sessions-1165769@compute-1-0-13_0/53672/pmix_dstor_121692/smdataseg-3517448193-0
+7ffb8526c000-7ffb8566c000 r--s 00000000 fd:02 130064                     /var/tmp/pbs.132274.nas1.foreman.hpc.ntnu.no/openmpi-sessions-1165769@compute-1-0-13_0/53672/pmix_dstor_121692/smseg-3517448193-0
+7ffb8566c000-7ffb8566d000 ---p 00000000 00:00 0 
+7ffb8566d000-7ffb8666d000 rw-p 00000000 00:00 0                          [stack:121732]
+7ffb8666d000-7ffb8666e000 ---p 00000000 00:00 0 
+7ffb8666e000-7ffb87674000 rw-p 00000000 00:00 0                          [stack:121731]
+7ffb87674000-7ffb87683000 r-xp 00000000 fd:00 394588                     /usr/lib64/libbz2.so.1.0.6
+7ffb87683000-7ffb87882000 ---p 0000f000 fd:00 394588                     /usr/lib64/libbz2.so.1.0.6
+7ffb87882000-7ffb87883000 r--p 0000e000 fd:00 394588                     /usr/lib64/libbz2.so.1.0.6
+7ffb87883000-7ffb87884000 rw-p 0000f000 fd:00 394588                     /usr/lib64/libbz2.so.1.0.6
+7ffb87884000-7ffb8789b000 r-xp 00000000 fd:00 394657                     /usr/lib64/libelf-0.168.so
+7ffb8789b000-7ffb87a9a000 ---p 00017000 fd:00 394657                     /usr/lib64/libelf-0.168.so
+7ffb87a9a000-7ffb87a9b000 r--p 00016000 fd:00 394657                     /usr/lib64/libelf-0.168.so
+7ffb87a9b000-7ffb87a9c000 rw-p 00017000 fd:00 394657                     /usr/lib64/libelf-0.168.so
+7ffb87a9c000-7ffb87aa0000 r-xp 00000000 fd:00 394692                     /usr/lib64/libattr.so.1.1.0
+7ffb87aa0000-7ffb87c9f000 ---p 00004000 fd:00 394692                     /usr/lib64/libattr.so.1.1.0
+7ffb87c9f000-7ffb87ca0000 r--p 00003000 fd:00 394692                     /usr/lib64/libattr.so.1.1.0
+7ffb87ca0000-7ffb87ca1000 rw-p 00004000 fd:00 394692                     /usr/lib64/libattr.so.1.1.0
+7ffb87ca1000-7ffb87ca2000 rw-p 00000000 00:00 0 
+7ffb87ca2000-7ffb87cc7000 r-xp 00000000 fd:00 394479                     /usr/lib64/liblzma.so.5.2.2
+7ffb87cc7000-7ffb87ec6000 ---p 00025000 fd:00 394479                     /usr/lib64/liblzma.so.5.2.2
+7ffb87ec6000-7ffb87ec7000 r--p 00024000 fd:00 394479                     /usr/lib64/liblzma.so.5.2.2
+7ffb87ec7000-7ffb87ec8000 rw-p 00025000 fd:00 394479                     /usr/lib64/liblzma.so.5.2.2
+7ffb87ec8000-7ffb87f0c000 r-xp 00000000 fd:00 395489                     /usr/lib64/libdw-0.168.so
+7ffb87f0c000-7ffb8810c000 ---p 00044000 fd:00 395489                     /usr/lib64/libdw-0.168.so
+7ffb8810c000-7ffb8810e000 r--p 00044000 fd:00 395489                     /usr/lib64/libdw-0.168.so
+7ffb8810e000-7ffb8810f000 rw-p 00046000 fd:00 395489                     /usr/lib64/libdw-0.168.so
+7ffb8810f000-7ffb88113000 r-xp 00000000 fd:00 394695                     /usr/lib64/libcap.so.2.22
+7ffb88113000-7ffb88312000 ---p 00004000 fd:00 394695                     /usr/lib64/libcap.so.2.22
+7ffb88312000-7ffb88313000 r--p 00003000 fd:00 394695                     /usr/lib64/libcap.so.2.22
+7ffb88313000-7ffb88314000 rw-p 00004000 fd:00 394695                     /usr/lib64/libcap.so.2.22
+7ffb88314000-7ffb88315000 rw-p 00000000 00:00 0 
+7ffb88315000-7ffb88362000 r-xp 00000000 fd:00 417107                     /usr/lib64/libnl.so.1.1.4
+7ffb88362000-7ffb88562000 ---p 0004d000 fd:00 417107                     /usr/lib64/libnl.so.1.1.4
+7ffb88562000-7ffb88563000 r--p 0004d000 fd:00 417107                     /usr/lib64/libnl.so.1.1.4
+7ffb88563000-7ffb88568000 rw-p 0004e000 fd:00 417107                     /usr/lib64/libnl.so.1.1.4
+7ffb88568000-7ffb8857d000 r-xp 00000000 fd:00 394467                     /usr/lib64/libz.so.1.2.7
+7ffb8857d000-7ffb8877c000 ---p 00015000 fd:00 394467                     /usr/lib64/libz.so.1.2.7
+7ffb8877c000-7ffb8877d000 r--p 00014000 fd:00 394467                     /usr/lib64/libz.so.1.2.7
+7ffb8877d000-7ffb8877e000 rw-p 00015000 fd:00 394467                     /usr/lib64/libz.so.1.2.7
+7ffb8877e000-7ffb8877f000 rw-p 00000000 00:00 0 
+7ffb8877f000-7ffb88781000 r-xp 00000000 fd:00 394021                     /usr/lib64/libdl-2.17.so
+7ffb88781000-7ffb88981000 ---p 00002000 fd:00 394021                     /usr/lib64/libdl-2.17.so
+7ffb88981000-7ffb88982000 r--p 00002000 fd:00 394021                     /usr/lib64/libdl-2.17.so
+7ffb88982000-7ffb88983000 rw-p 00003000 fd:00 394021                     /usr/lib64/libdl-2.17.so
+7ffb88983000-7ffb88984000 rw-p 00000000 00:00 0 
+7ffb88984000-7ffb8899a000 r-xp 00000000 00:2a 93393292                   /share/apps/software/Core/GCCcore/6.4.0/lib64/libgcc_s.so.1
+7ffb8899a000-7ffb8899b000 r--p 00015000 00:2a 93393292                   /share/apps/software/Core/GCCcore/6.4.0/lib64/libgcc_s.so.1
+7ffb8899b000-7ffb8899c000 rw-p 00016000 00:2a 93393292                   /share/apps/software/Core/GCCcore/6.4.0/lib64/libgcc_s.so.1
+7ffb8899c000-7ffb88afb000 r-xp 00000000 fd:00 394669                     /usr/lib64/libxml2.so.2.9.1
+7ffb88afb000-7ffb88cfa000 ---p 0015f000 fd:00 394669                     /usr/lib64/libxml2.so.2.9.1
+7ffb88cfa000-7ffb88d02000 r--p 0015e000 fd:00 394669                     /usr/lib64/libxml2.so.2.9.1
+7ffb88d02000-7ffb88d04000 rw-p 00166000 fd:00 394669                     /usr/lib64/libxml2.so.2.9.1
+7ffb88d04000-7ffb88d06000 rw-p 00000000 00:00 0 
+7ffb88d06000-7ffb88d0e000 r-xp 00000000 fd:00 398365                     /usr/lib64/libpciaccess.so.0.11.1
+7ffb88d0e000-7ffb88f0e000 ---p 00008000 fd:00 398365                     /usr/lib64/libpciaccess.so.0.11.1
+7ffb88f0e000-7ffb88f0f000 r--p 00008000 fd:00 398365                     /usr/lib64/libpciaccess.so.0.11.1
+7ffb88f0f000-7ffb88f10000 rw-p 00009000 fd:00 398365                     /usr/lib64/libpciaccess.so.0.11.1
+7ffb88f10000-7ffb88f11000 rw-p 00000000 00:00 0 
+7ffb88f11000-7ffb88f23000 r-xp 00000000 fd:00 396290                     /usr/lib64/libudev.so.1.6.2
+7ffb88f23000-7ffb88f24000 ---p 00012000 fd:00 396290                     /usr/lib64/libudev.so.1.6.2
+7ffb88f24000-7ffb88f25000 r--p 00012000 fd:00 396290                     /usr/lib64/libudev.so.1.6.2
+7ffb88f25000-7ffb88f26000 rw-p 00013000 fd:00 396290                     /usr/lib64/libudev.so.1.6.2
+7ffb88f26000-7ffb88f30000 r-xp 00000000 00:2a 159843125                  /share/apps/software/Compiler/GCCcore/6.4.0/numactl/2.0.11/lib/libnuma.so.1.0.0
+7ffb88f30000-7ffb88f31000 r--p 00009000 00:2a 159843125                  /share/apps/software/Compiler/GCCcore/6.4.0/numactl/2.0.11/lib/libnuma.so.1.0.0
+7ffb88f31000-7ffb88f32000 rw-p 0000a000 00:2a 159843125                  /share/apps/software/Compiler/GCCcore/6.4.0/numactl/2.0.11/lib/libnuma.so.1.0.0
+7ffb88f32000-7ffb88f6f000 r-xp 00000000 00:2a 159844642                  /share/apps/software/Compiler/GCCcore/6.4.0/hwloc/1.11.8/lib/libhwloc.so.5.7.5
+7ffb88f6f000-7ffb88f70000 r--p 0003c000 00:2a 159844642                  /share/apps/software/Compiler/GCCcore/6.4.0/hwloc/1.11.8/lib/libhwloc.so.5.7.5
+7ffb88f70000-7ffb88f71000 rw-p 0003d000 00:2a 159844642                  /share/apps/software/Compiler/GCCcore/6.4.0/hwloc/1.11.8/lib/libhwloc.so.5.7.5
+7ffb88f71000-7ffb88f72000 rw-p 00000000 00:00 0 
+7ffb88f72000-7ffb88f74000 r-xp 00000000 fd:00 394049                     /usr/lib64/libutil-2.17.so
+7ffb88f74000-7ffb89173000 ---p 00002000 fd:00 394049                     /usr/lib64/libutil-2.17.so
+7ffb89173000-7ffb89174000 r--p 00001000 fd:00 394049                     /usr/lib64/libutil-2.17.so
+7ffb89174000-7ffb89175000 rw-p 00002000 fd:00 394049                     /usr/lib64/libutil-2.17.so
+7ffb89175000-7ffb8917c000 r-xp 00000000 fd:00 394045                     /usr/lib64/librt-2.17.so
+7ffb8917c000-7ffb8937b000 ---p 00007000 fd:00 394045                     /usr/lib64/librt-2.17.so
+7ffb8937b000-7ffb8937c000 r--p 00006000 fd:00 394045                     /usr/lib64/librt-2.17.so
+7ffb8937c000-7ffb8937d000 rw-p 00007000 fd:00 394045                     /usr/lib64/librt-2.17.so
+7ffb8937d000-7ffb89386000 r-xp 00000000 fd:00 401309                     /usr/lib64/libmunge.so.2.0.0
+7ffb89386000-7ffb89585000 ---p 00009000 fd:00 401309                     /usr/lib64/libmunge.so.2.0.0
+7ffb89585000-7ffb89586000 r--p 00008000 fd:00 401309                     /usr/lib64/libmunge.so.2.0.0
+7ffb89586000-7ffb89587000 rw-p 00009000 fd:00 401309                     /usr/lib64/libmunge.so.2.0.0
+7ffb89587000-7ffb89588000 rw-p 00000000 00:00 0 
+7ffb89588000-7ffb8959f000 r-xp 00000000 fd:00 417111                     /usr/lib64/libibverbs.so.1.0.0
+7ffb8959f000-7ffb8979f000 ---p 00017000 fd:00 417111                     /usr/lib64/libibverbs.so.1.0.0
+7ffb8979f000-7ffb897a0000 r--p 00017000 fd:00 417111                     /usr/lib64/libibverbs.so.1.0.0
+7ffb897a0000-7ffb897a1000 rw-p 00018000 fd:00 417111                     /usr/lib64/libibverbs.so.1.0.0
+7ffb897a1000-7ffb897bb000 r-xp 00000000 fd:00 422621                     /usr/lib64/librdmacm.so.1.0.0
+7ffb897bb000-7ffb899ba000 ---p 0001a000 fd:00 422621                     /usr/lib64/librdmacm.so.1.0.0
+7ffb899ba000-7ffb899bb000 r--p 00019000 fd:00 422621                     /usr/lib64/librdmacm.so.1.0.0
+7ffb899bb000-7ffb899bc000 rw-p 0001a000 fd:00 422621                     /usr/lib64/librdmacm.so.1.0.0
+7ffb899bc000-7ffb899bd000 rw-p 00000000 00:00 0 
+7ffb899bd000-7ffb89b15000 r-xp 00000000 00:2a 160042384                  /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libopen-pal.so.20.10.2
+7ffb89b15000-7ffb89b16000 ---p 00158000 00:2a 160042384                  /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libopen-pal.so.20.10.2
+7ffb89b16000-7ffb89b1b000 r--p 00158000 00:2a 160042384                  /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libopen-pal.so.20.10.2
+7ffb89b1b000-7ffb89b28000 rw-p 0015d000 00:2a 160042384                  /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libopen-pal.so.20.10.2
+7ffb89b28000-7ffb89b32000 rw-p 00000000 00:00 0 
+7ffb89b32000-7ffb89d66000 r-xp 00000000 fd:00 395592                     /usr/lib64/libcrypto.so.1.0.2k
+7ffb89d66000-7ffb89f66000 ---p 00234000 fd:00 395592                     /usr/lib64/libcrypto.so.1.0.2k
+7ffb89f66000-7ffb89f82000 r--p 00234000 fd:00 395592                     /usr/lib64/libcrypto.so.1.0.2k
+7ffb89f82000-7ffb89f8f000 rw-p 00250000 fd:00 395592                     /usr/lib64/libcrypto.so.1.0.2k
+7ffb89f8f000-7ffb89f93000 rw-p 00000000 00:00 0 
+7ffb89f93000-7ffb8a0bc000 r-xp 00000000 00:2a 160042426                  /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libopen-rte.so.20.10.2
+7ffb8a0bc000-7ffb8a0bd000 ---p 00129000 00:2a 160042426                  /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libopen-rte.so.20.10.2
+7ffb8a0bd000-7ffb8a0bf000 r--p 00129000 00:2a 160042426                  /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libopen-rte.so.20.10.2
+7ffb8a0bf000-7ffb8a0ca000 rw-p 0012b000 00:2a 160042426                  /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libopen-rte.so.20.10.2
+7ffb8a0ca000-7ffb8a0ce000 rw-p 00000000 00:00 0 
+7ffb8a0ce000-7ffb8a0e7000 r-xp 00000000 fd:00 424025                     /usr/lib64/liblustreapi.so
+7ffb8a0e7000-7ffb8a2e6000 ---p 00019000 fd:00 424025                     /usr/lib64/liblustreapi.so
+7ffb8a2e6000-7ffb8a2e7000 r--p 00018000 fd:00 424025                     /usr/lib64/liblustreapi.so
+7ffb8a2e7000-7ffb8a2e8000 rw-p 00019000 fd:00 424025                     /usr/lib64/liblustreapi.so
+7ffb8a2e8000-7ffb8a2e9000 rw-p 00000000 00:00 0 
+7ffb8a2ec000-7ffb8a2ed000 rw-s 00000000 fd:02 130077                     /var/tmp/pbs.132274.nas1.foreman.hpc.ntnu.no/openmpi-sessions-1165769@compute-1-0-13_0/53672/1/shared_mem_btl_module.compute-1-0-13 (deleted)
+7ffb8a2ed000-7ffb8a2ee000 rw-p 00000000 00:00 0 
+7ffb8a2ee000-7ffb8a2ef000 rw-p 00000000 00:00 0 
+7ffb8a2ef000-7ffb8a2f0000 r--s 00003000 00:05 13123                      /dev/infiniband/uverbs0
+7ffb8a2f0000-7ffb8a2f1000 -w-s 00001000 00:05 13123                      /dev/infiniband/uverbs0
+7ffb8a2f1000-7ffb8a2f2000 -w-s 00000000 00:05 13123                      /dev/infiniband/uverbs0
+7ffb8a2f2000-7ffb8a2f3000 r--s 00003000 00:05 13123                      /dev/infiniband/uverbs0
+7ffb8a2f3000-7ffb8a2f4000 -w-s 00001000 00:05 13123                      /dev/infiniband/uverbs0
+7ffb8a2f4000-7ffb8a2f5000 -w-s 00000000 00:05 13123                      /dev/infiniband/uverbs0
+7ffb8a2f5000-7ffb8a2f7000 rw-p 00000000 00:00 0 
+7ffb8a2f7000-7ffb8a2f8000 r--s 00003000 00:05 13123                      /dev/infiniband/uverbs0
+7ffb8a2f8000-7ffb8a2f9000 -w-s 00001000 00:05 13123                      /dev/infiniband/uverbs0
+7ffb8a2f9000-7ffb8a2fa000 -w-s 00000000 00:05 13123                      /dev/infiniband/uverbs0
+7ffb8a2fa000-7ffb8a2fb000 rw-s 00000000 fd:02 130063                     /var/tmp/pbs.132274.nas1.foreman.hpc.ntnu.no/openmpi-sessions-1165769@compute-1-0-13_0/53672/pmix_dstor_121692/dstore_sm.lock
+7ffb8a2fb000-7ffb8a2fc000 r--s 00000000 fd:02 130062                     /var/tmp/pbs.132274.nas1.foreman.hpc.ntnu.no/openmpi-sessions-1165769@compute-1-0-13_0/53672/pmix_dstor_121692/initial-pmix_shared-segment-0
+7ffb8a2fc000-7ffb8a2fd000 rw-p 00000000 00:00 0 
+7ffb8a2fd000-7ffb8a4b5000 r-xp 00000000 fd:00 394015                     /usr/lib64/libc-2.17.so
+7ffb8a4b5000-7ffb8a6b5000 ---p 001b8000 fd:00 394015                     /usr/lib64/libc-2.17.so
+7ffb8a6b5000-7ffb8a6b9000 r--p 001b8000 fd:00 394015                     /usr/lib64/libc-2.17.so
+7ffb8a6b9000-7ffb8a6bb000 rw-p 001bc000 fd:00 394015                     /usr/lib64/libc-2.17.so
+7ffb8a6bb000-7ffb8a6c0000 rw-p 00000000 00:00 0 
+7ffb8a6c0000-7ffb8a6d7000 r-xp 00000000 fd:00 394041                     /usr/lib64/libpthread-2.17.so
+7ffb8a6d7000-7ffb8a8d6000 ---p 00017000 fd:00 394041                     /usr/lib64/libpthread-2.17.so
+7ffb8a8d6000-7ffb8a8d7000 r--p 00016000 fd:00 394041                     /usr/lib64/libpthread-2.17.so
+7ffb8a8d7000-7ffb8a8d8000 rw-p 00017000 fd:00 394041                     /usr/lib64/libpthread-2.17.so
+7ffb8a8d8000-7ffb8a8dc000 rw-p 00000000 00:00 0 
+7ffb8a8dc000-7ffb8a908000 r-xp 00000000 00:2a 93393363                   /share/apps/software/Core/GCCcore/6.4.0/lib64/libgomp.so.1.0.0
+7ffb8a908000-7ffb8a909000 r--p 0002b000 00:2a 93393363                   /share/apps/software/Core/GCCcore/6.4.0/lib64/libgomp.so.1.0.0
+7ffb8a909000-7ffb8a90a000 rw-p 0002c000 00:2a 93393363                   /share/apps/software/Core/GCCcore/6.4.0/lib64/libgomp.so.1.0.0
+7ffb8a90a000-7ffb8ab01000 r-xp 00000000 00:2a 160042518                  /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libmpi.so.20.10.2
+7ffb8ab01000-7ffb8ab02000 ---p 001f7000 00:2a 160042518                  /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libmpi.so.20.10.2
+7ffb8ab02000-7ffb8ab04000 r--p 001f7000 00:2a 160042518                  /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libmpi.so.20.10.2
+7ffb8ab04000-7ffb8ab1d000 rw-p 001f9000 00:2a 160042518                  /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libmpi.so.20.10.2
+7ffb8ab1d000-7ffb8ab2f000 rw-p 00000000 00:00 0 
+7ffb8ab2f000-7ffb8ac30000 r-xp 00000000 fd:00 394023                     /usr/lib64/libm-2.17.so
+7ffb8ac30000-7ffb8ae2f000 ---p 00101000 fd:00 394023                     /usr/lib64/libm-2.17.so
+7ffb8ae2f000-7ffb8ae30000 r--p 00100000 fd:00 394023                     /usr/lib64/libm-2.17.so
+7ffb8ae30000-7ffb8ae31000 rw-p 00101000 fd:00 394023                     /usr/lib64/libm-2.17.so
+7ffb8ae31000-7ffb8ae52000 r-xp 00000000 fd:00 424462                     /usr/lib64/ld-2.17.so
+7ffb8ae52000-7ffb8ae53000 rw-p 00000000 00:00 0 
+7ffb8ae53000-7ffb8ae91000 r-xp 00000000 00:2a 93393349                   /share/apps/software/Core/GCCcore/6.4.0/lib64/libquadmath.so.0.0.0
+7ffb8ae91000-7ffb8ae92000 r--p 0003d000 00:2a 93393349                   /share/apps/software/Core/GCCcore/6.4.0/lib64/libquadmath.so.0.0.0
+7ffb8ae92000-7ffb8ae93000 rw-p 0003e000 00:2a 93393349                   /share/apps/software/Core/GCCcore/6.4.0/lib64/libquadmath.so.0.0.0
+7ffb8ae93000-7ffb8afb7000 r-xp 00000000 00:2a 93393357                   /share/apps/software/Core/GCCcore/6.4.0/lib64/libgfortran.so.3.0.0
+7ffb8afb7000-7ffb8afb8000 ---p 00124000 00:2a 93393357                   /share/apps/software/Core/GCCcore/6.4.0/lib64/libgfortran.so.3.0.0
+7ffb8afb8000-7ffb8afb9000 r--p 00124000 00:2a 93393357                   /share/apps/software/Core/GCCcore/6.4.0/lib64/libgfortran.so.3.0.0
+7ffb8afb9000-7ffb8afbb000 rw-p 00125000 00:2a 93393357                   /share/apps/software/Core/GCCcore/6.4.0/lib64/libgfortran.so.3.0.0
+7ffb8afbb000-7ffb8afbc000 rw-p 00000000 00:00 0 
+7ffb8afbc000-7ffb8b01a000 r-xp 00000000 00:2a 160042942                  /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libmpi_mpifh.so.20.11.1
+7ffb8b01a000-7ffb8b01b000 ---p 0005e000 00:2a 160042942                  /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libmpi_mpifh.so.20.11.1
+7ffb8b01b000-7ffb8b01c000 r--p 0005e000 00:2a 160042942                  /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libmpi_mpifh.so.20.11.1
+7ffb8b01c000-7ffb8b01d000 rw-p 0005f000 00:2a 160042942                  /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libmpi_mpifh.so.20.11.1
+7ffb8b01d000-7ffb8b022000 r-xp 00000000 00:2a 160042947                  /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libmpi_usempi_ignore_tkr.so.20.10.1
+7ffb8b022000-7ffb8b023000 r--p 00004000 00:2a 160042947                  /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libmpi_usempi_ignore_tkr.so.20.10.1
+7ffb8b023000-7ffb8b024000 rw-p 00005000 00:2a 160042947                  /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libmpi_usempi_ignore_tkr.so.20.10.1
+7ffb8b024000-7ffb8b04e000 r-xp 00000000 00:2a 160042953                  /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libmpi_usempif08.so.20.10.1
+7ffb8b04e000-7ffb8b04f000 r--p 00029000 00:2a 160042953                  /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libmpi_usempif08.so.20.10.1
+7ffb8b04f000-7ffb8b050000 rw-p 0002a000 00:2a 160042953                  /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libmpi_usempif08.so.20.10.1
+7ffb8b050000-7ffb8b052000 rw-p 00000000 00:00 0 
+7ffb8b052000-7ffb8b053000 r--p 00021000 fd:00 424462                     /usr/lib64/ld-2.17.so
+7ffb8b053000-7ffb8b054000 rw-p 00022000 fd:00 424462                     /usr/lib64/ld-2.17.so
+7ffb8b054000-7ffb8b055000 rw-p 00000000 00:00 0 
+7ffb8b100000-7ffb8b200000 rw-s 01402000 00:05 13123                      /dev/infiniband/uverbs0
+7ffb8b200000-7ffb8b400000 rw-s 01502000 00:05 13123                      /dev/infiniband/uverbs0
+7ffb8b400000-7ffb8b600000 rw-s 01502000 00:05 13123                      /dev/infiniband/uverbs0
+7ffb8b600000-7ffb8b720000 rw-s 01502000 00:05 13123                      /dev/infiniband/uverbs0
+7ffb8b800000-7ffb8b900000 rw-s 01402000 00:05 13123                      /dev/infiniband/uverbs0
+7fff9c6ea000-7fff9c76f000 rw-p 00000000 00:00 0                          [stack]
+7fff9c7b0000-7fff9c7b2000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+[compute-1-0-13:121715] *** Process received signal ***
+[compute-1-0-13:121715] Signal: Aborted (6)
+[compute-1-0-13:121715] Signal code:  (-6)
+[compute-1-0-13:121715] [ 0] /usr/lib64/libpthread.so.0(+0xf5e0)[0x7ffb8a6cf5e0]
+[compute-1-0-13:121715] [ 1] /usr/lib64/libc.so.6(gsignal+0x37)[0x7ffb8a3321f7]
+[compute-1-0-13:121715] [ 2] /usr/lib64/libc.so.6(abort+0x148)[0x7ffb8a3338e8]
+[compute-1-0-13:121715] [ 3] /usr/lib64/libc.so.6(+0x74f47)[0x7ffb8a371f47]
+[compute-1-0-13:121715] [ 4] /usr/lib64/libc.so.6(+0x7c619)[0x7ffb8a379619]
+[compute-1-0-13:121715] [ 5] /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libopen-pal.so.20(+0x34b85)[0x7ffb899f1b85]
+[compute-1-0-13:121715] [ 6] /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libopen-pal.so.20(+0x7baa9)[0x7ffb89a38aa9]
+[compute-1-0-13:121715] [ 7] /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libopen-pal.so.20(mca_btl_openib_finalize+0x610)[0x7ffb89a34400]
+[compute-1-0-13:121715] [ 8] /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libopen-pal.so.20(+0x75d30)[0x7ffb89a32d30]
+[compute-1-0-13:121715] [ 9] /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libopen-pal.so.20(mca_base_framework_close+0x7f)[0x7ffb89a1eeff]
+[compute-1-0-13:121715] [10] /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libopen-pal.so.20(mca_base_framework_close+0x7f)[0x7ffb89a1eeff]
+[compute-1-0-13:121715] [11] /share/apps/software/Compiler/GCC/6.4.0-2.28/OpenMPI/2.1.2/lib/libmpi.so.20(ompi_mpi_finalize+0x5ae)[0x7ffb8a97881e]
+[compute-1-0-13:121715] [12] ./poisson(main+0x35c)[0x4015fc]
+[compute-1-0-13:121715] [13] /usr/lib64/libc.so.6(__libc_start_main+0xf5)[0x7ffb8a31ec05]
+[compute-1-0-13:121715] [14] ./poisson[0x4016cc]
+[compute-1-0-13:121715] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 11 with PID 0 on node compute-1-0-13 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+Size: n: 16384, P: 12, Threads: t = 8
+u_max = 1.000000e+00 
+Time: 63.837387
+Error: 0.000000011281878
+

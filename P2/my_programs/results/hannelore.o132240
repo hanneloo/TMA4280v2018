@@ -1,0 +1,25 @@
+Size: n: 2, P: 8, Threads: t = 8
+u_max = 0.000000e+00 
+Time: 0.092266
+Error:        0.000000
+
+Size: n: 2, P: 36, Threads: t = 8
+u_max = 0.000000e+00 
+Time: 0.226871
+Error:        0.000000
+
+Size: n: 128, P: 8, Threads: t = 8
+u_max = 3.011964e-03 
+Time: 0.100787
+Error:        0.996988
+
+Size: n: 128, P: 36, Threads: t = 8
+u_max = 3.011964e-03 
+Time: 0.339242
+Error:        0.996988
+
+[compute-1-0-15:32550] *** Process received signal ***
+[compute-1-0-15:32550] Signal: Segmentation fault (11)
+[compute-1-0-15:32550] Signal code:  (128)
+[compute-1-0-15:32550] Failing at address: (nil)
+=>> PBS: job killed: walltime 994 exceeded limit 900

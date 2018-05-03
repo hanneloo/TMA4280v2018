@@ -1,0 +1,34 @@
+Size: n: 16, P: 8, Threads: t = 1
+u_max = 1.010989e+00 
+Time: 0.000476
+Error: 0.010989314920737
+
+Size: n: 64, P: 8, Threads: t = 1
+u_max = 1.000683e+00 
+Time: 0.002565
+Error: 0.000682968393807
+
+Size: n: 256, P: 8, Threads: t = 1
+u_max = 1.000043e+00 
+Time: 0.034154
+Error: 0.000042670495005
+
+Size: n: 1024, P: 8, Threads: t = 1
+u_max = 1.000003e+00 
+Time: 0.439070
+Error: 0.000002666846661
+
+Size: n: 4096, P: 8, Threads: t = 1
+u_max = 1.000000e+00 
+Time: 7.542783
+Error: 0.000000166661946
+
+Size: n: 16384, P: 8, Threads: t = 1
+u_max = 1.000000e+00 
+Time: 134.132015
+Error: 0.000000011303160
+
+Size: n: 65536, P: 8, Threads: t = 1
+--------------------------------------------------------------------------
+mpirun noticed that process rank 6 with PID 0 on node compute-1-0-11 exited on signal 9 (Killed).
+--------------------------------------------------------------------------

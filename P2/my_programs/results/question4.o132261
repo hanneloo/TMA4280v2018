@@ -1,0 +1,35 @@
+Size: n: 16, P: 36, Threads: t = 1
+u_max = 0.000000e+00 
+Time: 0.017083
+Error: 0.000000000000000
+
+Size: n: 64, P: 36, Threads: t = 1
+u_max = -nan 
+Time: 0.094233
+Error: nan
+
+Size: n: 256, P: 36, Threads: t = 1
+u_max = 1.000037e+00 
+Time: 0.411335
+Error: 0.000115227879176
+
+Size: n: 1024, P: 36, Threads: t = 1
+u_max = 9.999949e-01 
+Time: 0.551593
+Error: 0.000162272721931
+
+Size: n: 4096, P: 36, Threads: t = 1
+u_max = 9.999995e-01 
+Time: 2.419729
+Error: 0.000014975221877
+
+Size: n: 16384, P: 36, Threads: t = 1
+u_max = 1.000000e+00 
+Time: 35.430585
+Error: 0.000000011281954
+
+Size: n: 65536, P: 36, Threads: t = 1
+u_max = 1.000000e+00 
+Time: 616.202722
+Error: 0.000000010066030
+
